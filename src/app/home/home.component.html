@@ -1,0 +1,82 @@
+<div class="head-title">
+	<div class="left">
+		<h1>Produits</h1>
+		<ul class="breadcrumb">
+		
+		</ul>
+	</div>
+	<!-- <a href="#" class="btn-download">
+		<i class='bx bxs-cloud-download' ></i>
+		<span class="text">Download PDF</span>
+	</a> -->
+</div>
+
+<!-- <ul class="box-info">
+	<li>
+		<i class='bx bxs-calendar-check' ></i>
+		<span class="text">
+			<h3>1020</h3>
+			<p>New Order</p>
+		</span>
+	</li>
+	<li>
+		<i class='bx bxs-group' ></i>
+		<span class="text">
+			<h3>2834</h3>
+			<p>Visitors</p>
+		</span>
+	</li>
+	<li>
+		<i class='bx bxs-dollar-circle' ></i>
+		<span class="text">
+			<h3>$2543</h3>
+			<p>Total Sales</p>
+		</span>
+	</li>
+</ul> -->
+
+
+<div class="table-data">
+	<div class="order">
+		<div class="head">
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nom Produit</th>
+					<th>Quantité</th>
+					<th>Prix</th>
+					<th>Action</th>
+					
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let p of produits">
+					<td>
+						<p>{{p.id}}</p>
+					</td>
+					<td>{{p.nomProduit}}</td>
+					<td >{{p.quantite}}</td>
+					<td>{{p.prix}}</td>
+					<td> <div class="action">
+						<a  (click) ="updateProduit(p.id)" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+						 <i class="fa fa-pencil h5 m-0" style="padding-left: 20px;"></i></a>
+						<a  class="text-danger" data-toggle="tooltip" data-placement="top" title="Delete Ticket" data-original-title="Close" mwlConfirmationPopover  placement="top">
+						 <i class="fa fa-remove h5 m-0" style="padding-left: 20px;"></i></a>
+						
+					</div></td>
+				
+			
+				</tr>
+		
+		
+			
+		
+			</tbody>
+		</table>
+		<button type="button" class="btn btn-primary" routerLink="/addProduct">Ajouter Produit</button>
+	</div>
+
+</div>

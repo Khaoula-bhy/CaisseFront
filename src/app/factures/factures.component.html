@@ -1,0 +1,42 @@
+<div class="head-title">
+    <div class="left">
+        <h1>Factures</h1>
+        <ul class="breadcrumb">
+
+        </ul>
+    </div>
+
+</div>
+<div class="table-data">
+    <div class="order">
+        <div class="head">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Date</th>
+                    <th>Montant</th>
+                    <th></th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let f of factures">
+                    <td>{{f.id}}</td>
+                    <td>{{f.date}}</td>
+                    <td>{{f.prix}}</td>
+
+                </tr>
+
+
+
+
+            </tbody>
+        </table>
+        <!-- <button type="button" class="btn btn-primary" routerLink="/addProduct">Ajouter Produit</button> -->
+    </div>
+
+</div>

@@ -1,0 +1,48 @@
+<div class="head-title">
+	<div class="left">
+		<h1>Clients</h1>
+		<ul class="breadcrumb">
+		
+		</ul>
+	</div>
+	
+</div>
+<div class="table-data">
+	<div class="order">
+		<div class="head">
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nom</th>
+					<th>Prénom</th>
+					<th>Email</th>
+	
+					
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let c of clients">
+					<td>
+						{{c.cin}}
+					</td>
+                    <td >{{c.lastName}}</td>
+					<td>{{c.firstName}}</td>
+					
+					<td>{{c.email}}</td>
+					
+				
+			
+				</tr>
+		
+		
+			
+		
+			</tbody>
+		</table>
+		<!-- <button type="button" class="btn btn-primary" routerLink="/addProduct">Ajouter Produit</button> -->
+	</div>
+
+</div>
